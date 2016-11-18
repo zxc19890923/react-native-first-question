@@ -1,0 +1,11 @@
+报错问题
+Error watching file for changes: EMFILE
+{"code":"EMFILE","errno":"EMFILE","syscall":"Error watching file for changes:","filename":null}
+Error: Error watching file for changes: EMFILE
+    at exports._errnoException (util.js:1008:11)
+    at FSEvent.FSWatcher._handle.onchange (fs.js:1406:11)
+    
+    
+解决
+安装最新的watchman
+$ brew install --HEAD watchman
